@@ -8,12 +8,12 @@ refresh();
                         console.log(data);
                         var str = "";
                         for(var i=0;i<data.length;i++){
-                            str = "<tr><td>"+data[i].Student_ID+"</td><td>"+data[i].Student_ID+"</td><td>"+data[i].Full_Name+"</td><td>"+data[i].age+"</td><td>"+data[i].qq+"</td><td>"+data[i].job+"</td><td><button class='btn btn-primary btn-xs' id='change' data-toggle='modal' data-target='myModal'>修改</button><button class='btn btn-danger btn-xs' id='del' style='margin-left: 5px'>删除</button></td></tr>";
-                            $("table>tbody").append(str)
+                            str = "<tr><td>"+data[i].Student_ID+"</td><td>"+data[i].Full_Name+"</td><td>"+data[i].Sex+"</td><td>"+data[i].Age+"</td><td>"+data[i].Brthday+"</td><td>"+data[i].Political_Outlook+"</td><td>"+data[i].phone_number+"</td><td>"+data[i].Home_address+"</td><td>"+data[i].E_mail+"</td><td><button class='btn btn-primary btn-xs' id='change' data-toggle='modal' data-target='myModal'>修改</button><button class='btn btn-danger btn-xs' id='del' style='margin-left: 5px'>删除</button></td></tr>";
+                           $("table>tbody").append(str)
                         }
                     }
                 })
-            }
+            };
 
   var a = 0;
   $(document).on("click","#change",function(){

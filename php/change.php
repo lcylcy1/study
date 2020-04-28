@@ -1,10 +1,10 @@
 <?php
 
-$username = $_POST["username"];
-$school = $_POST['school'];
-$age = $_POST['age'];
-$qq = $_POST['qq'];
-$job = $_POST['job'];
+$Student_ID = $_POST["username"];
+$Full_Name = $_POST['school'];
+$Sex = $_POST['age'];
+$Age = $_POST['qq'];
+$Brthday = $_POST['job'];
 $t = $_GET["id"];
 include("conn.php");
 $sql = "update student_information set username='$username',school='$school',age='$age',qq='$qq',job='$job' where id=$t";
