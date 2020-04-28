@@ -35,7 +35,7 @@ refresh();
     var _this = $(this)
 
     $.ajax({
-        url:"action/del.php",
+        url:"../php/del.php",
         type:"POST",
         data:{
             val:"del",
@@ -61,11 +61,11 @@ $(document).on("click","#sign",function(){
         $("table>tbody").children("tr").eq(a).find("td").eq(s).text(q)
     })
     $.ajax({
-        url:"action/change.php?id="+t,
+        url:"../php/change.php?id="+t,
         type:"POST",
         data:data1,
         success:function(res){
-
+            console.log(res);
         }
     })
 })
